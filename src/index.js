@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Layout from './components/Layout';
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -12,31 +12,12 @@ import * as serviceWorker from './serviceWorker';
 // );
 // jsdrops.com/react-dom2
 
-const render = () => {
-  document.getElementById('mountNode').innerHTML = `
-    <div>
-      Hello HTML
-      <input />
-      <pre>${new Date().toLocaleTimeString()}</pre>
-    </div>
-  `;
 
-  ReactDOM.render(
-    React.createElement(
-      'div',
-      null,
-      'Hello React ',
-      React.createElement('input', null),
-      React.createElement(
-        'pre',
-        null,
-        new Date().toLocaleTimeString()
-      )
-    ),
-    document.getElementById('mountNode2')
-  );
-};
-setInterval(render, 1000);
+ReactDOM.render(
+  <Layout />,
+  document.getElementById('root')
+);
+
 
 
 
