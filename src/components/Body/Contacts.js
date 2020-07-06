@@ -17,17 +17,17 @@ export default class Contacts extends React.Component {
   
   render() {
         return (
-            <div class="container">
-              <h1 class="text-primary">Friends</h1>
-              <div class="row">
-                <input type="text" id="to-do-input"></input>
-                <button type="button" class="btn btn-success" id="to-do-submit">Submit</button>
+            <div className="container">
+              <h1 className="text-primary tc">Friends</h1>
+              <div className="tc flex flex-wrap">
+                <input id="to-do-input" class="input-reset ba b--black-20 pa2 mb2 db w-40 br3" type="text" aria-describedby="name-desc"></input>
+                <button type="button" className="ph2 pv1 mh3 btn btn-success" id="to-do-submit">Search</button>
               </div>
-              <div class="container-fluid border-dark">
+              <div className="flex flex-wrap bg-light-gray">
                 <CardList contacts={contacts}/>
               </div>
-              <div class="container-fluid">
-                <button type="button" class="btn btn-success" id="to-do-refresh" onClick={this.handleClick}>Refresh List</button>
+              <div className="container-fluid">
+                <button type="button" className="btn btn-success" id="to-do-refresh" onClick={this.handleClick}>Refresh List</button>
               </div>
             </div>
         );
