@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import Card from './ContactList/Card';
-import { contacts } from './ContactList/contactInfo';
+import CardList from './ContactList/CardList';
+import { contacts } from './ContactList/contacts';
+
 
 export default class Contacts extends React.Component {
   constructor(props) {
@@ -12,6 +13,7 @@ export default class Contacts extends React.Component {
   handleClick() {
     alert('Click happened');
   }
+
   
   render() {
         return (
@@ -22,7 +24,7 @@ export default class Contacts extends React.Component {
                 <button type="button" class="btn btn-success" id="to-do-submit">Submit</button>
               </div>
               <div class="container-fluid border-dark">
-                <Card id={contacts[0].id} name={contacts[0].name} email={contacts[0].email} phoneNumber={contacts[0].phoneNumber}/>
+                <CardList contacts={contacts}/>
               </div>
               <div class="container-fluid">
                 <button type="button" class="btn btn-success" id="to-do-refresh" onClick={this.handleClick}>Refresh List</button>
