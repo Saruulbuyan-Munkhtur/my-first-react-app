@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-
+import ListItem from './ToDoList/ListItem';
 
 export default class ToDoList extends React.Component {
     render() {
@@ -12,10 +12,10 @@ export default class ToDoList extends React.Component {
 					<button type="button" class="btn btn-success" id="to-do-submit">Submit</button>
 				</div>
 				<div class="container-fluid border-dark">
-					<ul id="to-do-list" class="text-secondary">
-						<li class="active">First</li>
-						<li class="active">Second</li>
-						<li class="active">Third</li>
+					<ul id="to-do-list" class="flex flex-column text-secondary list pl0">
+						<ListItem id="Firswgwegt" />
+						<ListItem id="Secoweggnd" />
+						<ListItem id="Thirwgegd" />
 					</ul>
 				</div>
 				<div class="container-fluid">
