@@ -9,7 +9,7 @@ export default class Body extends React.Component {
     render() {
         return (
             <div className = "flex flex-wrap justify-center">
-                <div className="w-100 pa3 mr2 h2">
+                <div className="w-100 pa3 mr2 h2 mv3 mb5 pb3">
                     <TimerDate />
                 </div>
                 <div className="flex w-100 pa3 mr2">

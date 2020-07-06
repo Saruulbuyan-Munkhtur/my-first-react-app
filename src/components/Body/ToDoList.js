@@ -3,6 +3,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import ListItem from './ToDoList/ListItem';
 
 export default class ToDoList extends React.Component {
+
+	constructor(props){
+		super(props)
+	}
+	// const addItem = () => {
+
+	// }
+	// let to-do-list = document.getElementById('to-do-list');
     render() {
         return (
             <div class="list-group-item">
@@ -13,9 +21,9 @@ export default class ToDoList extends React.Component {
 				</div>
 				<div class="container-fluid border-dark">
 					<ul id="to-do-list" class="flex flex-column text-secondary list pl0">
-						<ListItem id="Firswgwegt" />
-						<ListItem id="Secoweggnd" />
-						<ListItem id="Thirwgegd" />
+						<ListItem content="First" id={'listContent'}/>
+						<ListItem content="Second" />
+						<ListItem content="Third" />
 					</ul>
 				</div>
 				<div class="container-fluid">

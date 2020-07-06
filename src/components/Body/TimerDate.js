@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 export default class TimerDate extends React.Component {
     render() {
         return (
-            <div className='bg-dark-primary ba3 bw3'>
+            <div className='bg-dark-primary ba3 bw3 pb3'>
                 {/* <Clock />
                 <Moment /> */}
                 <p>Timer Date Location</p>
