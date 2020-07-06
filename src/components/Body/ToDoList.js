@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-export default class Navbar extends React.Component {
+export default class ToDoList extends React.Component {
     render() {
         return (
             <div class="list-group-item">
