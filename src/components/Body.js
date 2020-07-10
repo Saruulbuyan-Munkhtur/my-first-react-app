@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
+//import 'bootstrap/dist/css/bootstrap.css';
 import TimerDate from './Body/TimerDate';
 import ToDoList from './Body/ToDoList';
 import CalendarEvents from './Body/CalendarEvents';
