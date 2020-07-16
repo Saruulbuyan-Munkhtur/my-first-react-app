@@ -4,12 +4,12 @@ import TimerDate from './TimerDate';
 import ToDoList from './ToDoList';
 import CalendarEvents from './CalendarEvents';
 import Contacts from './Contacts';
-import ErrorBoundries from '../components/ErrorBoundry';
+import ErrorBoundry from '../components/ErrorBoundry';
 
 export default class Body extends React.Component {
     render() {
         return (
-            <div className = "flex flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center">
                 <div className="w-100 pa3 mr2 h2 mv3 mb5 pb3">
                     <TimerDate />
                 </div>
@@ -22,10 +22,12 @@ export default class Body extends React.Component {
                     </div>
                 </div>
                 <div className='w-100 pa3 mr2'>
-                    <Contacts />
+                    <ErrorBoundry>
+                        <Contacts />
+                    </ErrorBoundry>
                 </div>
 
-            </div>    
+            </div>
         );
     }
 }
