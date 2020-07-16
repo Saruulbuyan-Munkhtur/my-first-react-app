@@ -1,9 +1,9 @@
 import React from 'react';
 //import './components/node_modules/bootstrap/dist/css/bootstrap.css';
-import CardList from './components/CardList';
-import { contacts } from './components/contacts';
-import SearchBox from './components/SearchBox';
-import Scroll from './components/Scroll';
+import CardList from './../components/CardList';
+import { contacts } from './../components/contacts';
+import SearchBox from './../components/SearchBox';
+import Scroll from './../components/Scroll';
 
 class Contacts extends React.Component {
   constructor(props) {

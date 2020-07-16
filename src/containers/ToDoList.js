@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import ListItem from './components/ListItem';
-import SearchBox from './components/SearchBox';
+import ListItem from './../components/ListItem';
+import SearchBox from './../components/SearchBox';
 
 export default class ToDoList extends React.Component {
 
