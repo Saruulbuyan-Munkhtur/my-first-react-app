@@ -32,10 +32,6 @@ class Contacts extends React.Component {
   
   render() {
 
-    if (true) {
-      throw new Error('Noooo');
-    }
-
     const filteredContacts = this.state.contacts.filter(contacts => {
       return contacts.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
     })
