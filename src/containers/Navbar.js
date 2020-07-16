@@ -5,10 +5,10 @@ import './../cssFiles/navbar.css'
 export default class Navbar extends React.Component {
     render() {
         return (
-            <nav class="flex justify-between bb b--black-70 bg-light-blue">
-                <a class="link black-90 hover-white no-underline flex items-center pa3" href="">
+            <nav className="flex justify-between bb b--black-70 bg-light-blue">
+                <a className="link black-90 hover-white no-underline flex items-center pa3" href="">
                     <svg
-                    class="dib h1 w1"
+                    className="dib h1 w1"
                     data-icon="grid"
                     viewBox="0 0 32 32"
                     //style="fill:currentcolor"
@@ -19,10 +19,10 @@ export default class Navbar extends React.Component {
                     </path>
                     </svg>
                 </a>
-                <div class="flex-grow pa3 flex items-center">
-                    <a class="f5 link dib black-60 dim mr3 mr4-ns" href="#0">About</a>
-                    <a class="f5 link dib black-60 dim mr3 mr4-ns" href="#0">Sign In</a>
-                    <a class="f5 dib black-60 bg-animate hover-bg-white hover-black no-underline pv2 ph4 br-pill ba b--white-70" href="#0">Sign Up</a>
+                <div className="flex-grow pa3 flex items-center">
+                    <a className="f5 link dib black-60 dim mr3 mr4-ns" href="#0">About</a>
+                    <a className="f5 link dib black-60 dim mr3 mr4-ns" href="#0">Sign In</a>
+                    <a className="f5 dib black-60 bg-animate hover-bg-white hover-black no-underline pv2 ph4 br-pill ba b--white-70" href="#0">Sign Up</a>
                 </div>
             </nav>
         );
